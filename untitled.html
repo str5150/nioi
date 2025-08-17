@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA ATELIER - 事業計画書</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fdfdfd;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            font-size: 1.4em;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .summary-table th {
+            width: 30%;
+            background-color: #eaf5fc;
+        }
+        .tribe-card {
+            border-left: 5px solid;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            border-radius: 0 5px 5px 0;
+        }
+        .citrus { border-color: #f39c12; }
+        .floral { border-color: #e91e63; }
+        .woody { border-color: #8d6e63; }
+        .herbal { border-color: #2ecc71; }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .kpi-card {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .kpi-card h4 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+        .kpi-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .kpi-card li {
+            margin-bottom: 10px;
+        }
+        .kpi-card strong {
+            color: #3498db;
+            font-size: 1.1em;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .toc h3 {
+            border: none;
+            padding: 0;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin-bottom: 10px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>AURA ATELIER</h1>
+            <p>パーソナル・セント特化サロン 事業計画書</p>
+        </header>
+
+        <div class="toc">
+            <h3>目次</h3>
+            <ul>
+                <li><a href="#summary">1. 事業概要</a></li>
+                <li><a href="#services">2. サービス設計と収益モデル</a></li>
+                <li><a href="#method">3. 独自の診断メソッド「フレグランス・トライブ診断」</a></li>
+                <li><a href="#marketing">4. 集客戦略とSNS活用</a></li>
+                <li><a href="#store">5. 店舗モデルとオペレーション</a></li>
+                <li><a href="#kpi">6. 数値計画とKPI</a></li>
+                <li><a href="#launch">7. 14日間ローンチ・アクション</a></li>
+                <li><a href="#research">8. 詳細リサーチ・分析</a></li>
+                <li><a href="#team">9. 共同開発者への提案</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section id="summary" class="section">
+                <h2>1. 事業概要</h2>
+                <h3>事業コンセプト</h3>
+                <p><strong>AURA ATELIER</strong>は、独自の「フレグランス・トライブ診断」を用いて、一人ひとりの香りの個性を発見し、パーソナライズされた香水を調香する予約制サロンです。</p>
+                <ul>
+                    <li><strong>体臭を「消すべきネガティブなもの」から「自分らしさを表現するポジティブな個性」へ再定義</strong>します。</li>
+                    <li>MBTIや動物占いのようなエンターテイメント性と自己肯定感を重視した診断体験を提供します。</li>
+                    <li>RIZAP式の伴走型コーチングによる継続的なサポートを行います。</li>
+                </ul>
+
+                <h3>戦略サマリー（1分でわかる）</h3>
+                <table class="summary-table">
+                    <tbody>
+                        <tr>
+                            <th>モデル</th>
+                            <td>予約制のパーソナル・セント特化サロン（6〜10坪／家賃10〜15万円）</td>
+                        </tr>
+                        <tr>
+                            <th>ターゲット</th>
+                            <td>メインターゲット：婚活女子（20代後半〜30代前半）。サブターゲット：ウェルネス志向の男女（20代後半～40代）</td>
+                        </tr>
+                        <tr>
+                            <th>商品</th>
+                            <td>①90分の初回体験¥30,000、②3ヶ月プログラム¥250,000〜、③物販</td>
+                        </tr>
+                        <tr>
+                            <th>集客</th>
+                            <td>TikTok/IGリール中心＋UGCシーディング＋友だち紹介</td>
+                        </tr>
+                        <tr>
+                            <th>人員</th>
+                            <td>創業者1名運営＋週1–2日アシスタント</td>
+                        </tr>
+                        <tr>
+                            <th>損益</th>
+                            <td>稼働70%で月商約145万円／営業利益90万円前後</td>
+                        </tr>
+                        <tr>
+                            <th>拡張</th>
+                            <td>月9〜12ヶ月でKPI達成＆待ち行列100名を条件に、都心⇄関西or福岡へ2店舗目</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="services" class="section">
+                <h2>2. サービス設計と収益モデル</h2>
+                <h3>サービス構成と価格設定</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>メニュー</th>
+                            <th>内容</th>
+                            <th>価格（税別）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>初回体験</strong></td>
+                            <td>90分のカウンセリングと診断。パーソナル・セント・カルテ(PDF)とお守りアロマ(5ml)付き。</td>
+                            <td>¥30,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3ヶ月改善プログラム</strong></td>
+                            <td>初回体験の内容に加え、食事・栄養指導、体臭ケアアイテム、メンタルサポートを含む総合コーチング。（月4回）</td>
+                            <td>¥250,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>物販・D2C</strong></td>
+                            <td>ワードローブ3本セット(5ml×3)、アトリエブレンド(30ml)、月額リフィルプランなど。顧客の声を基にOEMでオリジナルデオドラント商品等も開発。</td>
+                            <td>¥3,900～</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>収益モデル（成熟時の目安）</h3>
+                <pre><code>供給：1日3枠×月24日＝72枠/月
+稼働率：70% → 50枠/月
+
+売上モデル：
+- 体験：18件 x ¥30,000 = ¥540,000
+- プログラム新規：3名 x ¥250,000 = ¥750,000
+- 物販：20件 x 平均¥8,000 = ¥160,000
+--------------------------------------------------
+合計月商：¥1,450,000
+
+主要コスト：約¥530,000
+
+営業利益：約¥920,000／月
+</code></pre>
+            </section>
+
+            <section id="method" class="section">
+                <h2>3. 独自の診断メソッド「フレグランス・トライブ診断」</h2>
+                <p>東洋医学やアーユルヴェーダの体系を背景に、20代が直感的で楽しめるように、ポップな4つのタイプに分類します。</p>
+                <h3>4つのフレグランス・トライブ</h3>
+                <div class="tribe-card citrus">
+                    <h4>シトラス・スプリンター</h4>
+                    <p>特徴：運動・朝型・ミニマルファッション・短時間集中。爽やかでアクティブな香り。</p>
+                </div>
+                <div class="tribe-card floral">
+                    <h4>フローラル・ドリーマー</h4>
+                    <p>特徴：夜型創作・繊細・ロマンチック画像保存。優雅でロマンチックな香り。</p>
+                </div>
+                <div class="tribe-card woody">
+                    <h4>ウッディ・クリエイター</h4>
+                    <p>特徴：整理整頓・知的作業・古着×上質アイテム。落ち着いた知的な香り。</p>
+                </div>
+                <div class="tribe-card herbal">
+                    <h4>ハーバル・メディテーター</h4>
+                    <p>特徴：自然派・ハーブティー・ゆっくりトーク。自然でリラックスできる香り。</p>
+                </div>
+                <h3>診断の流れ（カスタマージャーニー）</h3>
+                <pre><code>認知（短尺動画）
+  ↓
+Web/LINEでクイック診断（#フレグランス・トライブ）
+  ↓
+予約
+  ↓
+来店（問診5分→診断20分→ヒアリング45分→ミックス＆最終10分→撮影5分）
+  ↓
+カルテPDF＋サンプル送付
+  ↓
+48h後フォロー（感想＋再提案）
+  ↓
+物販/プログラム打診
+  ↓
+コミュニティで継続
+</code></pre>
+            </section>
+
+            <section id="marketing" class="section">
+                <h2>4. 集客戦略とSNS活用</h2>
+                <h3>SNSアカウントコンセプト</h3>
+                <p>メインターゲットである「婚活女子」に響くコンセプトを設定します。</p>
+                <pre><code>メインコンセプト：「匂いで彼を沼らせる♡婚活女子の香り戦略」
+
+プロフィール文例：
+男性が忘れられなくなる♡匂い女子の作り方
+体臭・口臭・髪・服まで香り戦略を徹底発信
+デートで沼らせる秘密の匂い習慣を公開中
+</code></pre>
+                <h3>プラットフォームの役割</h3>
+                <ul>
+                    <li><strong>TikTok</strong>: 最上流の体験動画（ASMR/調香工程/反応）で拡散。</li>
+                    <li><strong>Instagram</strong>: リール＋カルーセルで"香りの言語化"と保存導線を構築。</li>
+                    <li><strong>YouTube Shorts</strong>: 来店ストーリーの抜粋を配信。</li>
+                    <li><strong>LINE公式</strong>: 予約・診断・フォローの運用母艦。</li>
+                </ul>
+                <h3>初期戦略：UGCシーディング</h3>
+                <p>初月に1–5万人フォロワーのマイクロクリエイターを30名招待し、体験を投稿してもらうことで初期の認知と信頼を獲得します。</p>
+                <ul>
+                    <li><strong>提供条件:</strong> ビフォー/アフター動画1本＋来店Vlog1本＋写真3枚</li>
+                    <li><strong>指定ハッシュタグ:</strong> #マイセント発見 #AURA_ATELIER #フレグランストライブ</li>
+                </ul>
+            </section>
+
+            <section id="store" class="section">
+                <h2>5. 店舗モデルとオペレーション</h2>
+                <h3>店舗モデル（MVP仕様）</h3>
+                <ul>
+                    <li><strong>立地基準:</strong> エレベーター有の雑居ビル6〜10坪。駅徒歩7分以内、賃料10〜15万円。人通りより”映え導線”を重視。</li>
+                    <li><strong>内装コンセプト:</strong> DIYも活用したラボ風デザイン。高演色LEDとスポット照明で”ラボ陰影”を演出。</li>
+                    <li><strong>安全・法務:</strong> 創業MVPでは「衣類・ルーム用」表記での提供、または許可を持つOEMと連携。表現は薬機・景表法に準拠。</li>
+                </ul>
+                <h3>オペレーション（1名運営モデル）</h3>
+                <pre><code><strong>1日の流れ:</strong>
+開店準備20分 → 90分枠×3 → 片付け20分 → SNS更新30分
+
+<strong>予約・顧客管理:</strong>
+- 予約システム：STORES / Calendly
+- CRM：Notion
+- 決済：事前決済50％（直前キャンセル対策）
+- フォローアップ：48時間後に感想フォームを自動送付
+</code></pre>
+            </section>
+
+            <section id="kpi" class="section">
+                <h2>6. 数値計画とKPI</h2>
+                <h3>初期投資と月次費用</h3>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <h4>初期投資（目安）</h4>
+                        <ul>
+                            <li>敷金礼金保証：¥30–45万</li>
+                            <li>内装・什器：¥50–80万</li>
+                            <li>器具・初回在庫：¥20–30万</li>
+                            <li>運転資金：¥60–80万</li>
+                            <li><strong>合計：約¥160–235万</strong></li>
+                        </ul>
+                    </div>
+                    <div class="kpi-card">
+                        <h4>月次費用（目安）</h4>
+                        <ul>
+                            <li>家賃：¥12–15万</li>
+                            <li>広告費：¥15万</li>
+                            <li>消耗・原材料：¥10万</li>
+                            <li>人件費・光熱費等：¥9万</li>
+                            <li><strong>合計：約¥51–54万</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>KPIと成長計画（12ヶ月）</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>期</th>
+                            <th>稼働率</th>
+                            <th>月商目安</th>
+                            <th>主要メモ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>M1</td><td>30%</td><td>¥30–60万</td><td>シーディング・内装整備</td></tr>
+                        <tr><td>M2</td><td>45%</td><td>¥70–100万</td><td>UGC増、物販立ち上げ</td></tr>
+                        <tr><td>M3</td><td>55%</td><td>¥100–120万</td><td>CVR最適化</td></tr>
+                        <tr><td>M4–6</td><td>60–65%</td><td>¥120–150万</td><td>口コミ比率↑</td></tr>
+                        <tr><td>M7–9</td><td>70%</td><td>¥145万前後</td><td>利益安定期</td></tr>
+                        <tr><td>M10–12</td><td>70%+</td><td>¥145–160万</td><td>2店舗目の意思決定</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="launch" class="section">
+                <h2>7. 14日間ローンチ・アクション</h2>
+                <table>
+                    <thead>
+                        <tr><th>Day</th><th>アクション</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1–2</td><td>物件2〜3つ内見、換気・保管ルールと撮影導線を確認</td></tr>
+                        <tr><td>3–4</td><td>ロゴ・タイポ・色（ラボ白／ステンレス／透明）を決定</td></tr>
+                        <tr><td>5</td><td>LINE公式／予約ページ仮実装、診断フォーム（15問）作成</td></tr>
+                        <tr><td>6–7</td><td>器具・資材の発注、写真映え棚をDIY</td></tr>
+                        <tr><td>8</td><td>TikTok/IGの企画30本洗い出し（撮影日2日で回収）</td></tr>
+                        <tr><td>9</td><td>シーディング候補60名に招待DM</td></tr>
+                        <tr><td>10–11</td><td>プレオープン（友人5組）→UGC初回10本確保</td></tr>
+                        <tr><td>12</td><td>料金/オファー最終調整（平日デイ枠・紹介特典）</td></tr>
+                        <tr><td>13</td><td>本オープン告知（リール3本連投＋ストーリーズ）</td></tr>
+                        <tr><td>14</td><td>48hフォロー運用開始／ダッシュボード初期化</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="research" class="section">
+                <h2>8. 詳細リサーチ・分析</h2>
+                <h3>市場分析</h3>
+                <ul>
+                    <li><strong>消費者意識:</strong> 70%が体臭を気にし、50%が対策ニーズを持つ。一方で93.1%が他人の体臭を指摘しにくいと感じており、客観的な評価とソリューションへの潜在的ニーズは非常に高い。</li>
+                    <li><strong>4大体臭分類:</strong> 疲労臭、汗臭、加齢臭、ミドル脂臭の存在が認知されている。サービスの背景となる科学的根拠として活用。</li>
+                </ul>
+                <h3>競合分析と学び</h3>
+                <ul>
+                    <li><strong>Kunkun body事例:</strong> ガスセンサー×AIでの識別・数値化という技術的精度を追求したが、開発コストと市場ニーズのバランスが崩壊し撤退。 <strong>教訓：技術精度よりユーザー体験と共感を優先し、ライト診断モデルを採用すべき。</strong></li>
+                    <li><strong>odorate事例:</strong> 自宅で客観的に評価できるキットは、客観的評価への潜在的需要を示している。しかし、診断後の具体的なソリューション提供という核心部分にはまだ踏み込んでいない点に、本事業の勝機がある。</li>
+                </ul>
+            </section>
+
+            <section id="team" class="section">
+                <h2>9. 共同開発者への提案</h2>
+                <h3>必要な専門性・スキル</h3>
+                <ul>
+                    <li><strong>マーケティング:</strong> SNS運用、コンテンツ制作、UGC戦略</li>
+                    <li><strong>デザイン:</strong> ブランディング、空間デザイン、UX/UI、フォトグラフィ</li>
+                    <li><strong>技術:</strong> Web開発、診断システム開発、データ分析</li>
+                    <li><strong>運営:</strong> カスタマーサクセス、店舗オペレーション管理</li>
+                    <li><strong>法務:</strong> 化粧品製造販売許可、コンプライアンス</li>
+                </ul>
+                <h3>次のステップ</h3>
+                <ol>
+                    <li><strong>チーム編成:</strong> 必要なスキルを持つメンバーを集める。</li>
+                    <li><strong>MVP開発:</strong> 診断システムと予約システムのプロトタイプ作成。</li>
+                    <li><strong>テスト運用:</strong> 小規模での検証実験。</li>
+                    <li><strong>資金調達:</strong> 初期投資の確保。</li>
+                    <li><strong>店舗開設:</strong> 1号店のオープン。</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 AURA ATELIER. All rights reserved.</p>
+            <p>この文書は提供された資料を基に作成されました。</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
